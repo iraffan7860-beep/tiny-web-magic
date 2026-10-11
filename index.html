@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>A Little Birthday Magic ♡</title>
+  <meta name="description" content="A little magical birthday surprise made with love." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="sky-glow glow-one"></div>
+  <div class="sky-glow glow-two"></div>
+  <div class="stars" id="stars" aria-hidden="true"></div>
+
+  <main class="page">
+    <header class="brand">
+      <span class="brand-star">✦</span>
+      TINY WEB MAGIC
+      <span class="brand-star">✦</span>
+    </header>
+
+    <section class="birthday-card">
+      <div class="card-shine"></div>
+
+      <div class="top-label">
+        <span>✧</span> A LITTLE SURPRISE FOR YOU <span>✧</span>
+      </div>
+
+      <!-- New birthday illustration instead of the first gift box -->
+      <div class="birthday-illustration" aria-label="Birthday cake illustration">
+        <span class="cake-sparkle sparkle-one">✧</span>
+        <span class="cake-sparkle sparkle-two">♡</span>
+        <span class="cake-sparkle sparkle-three">✦</span>
+        <div class="cake-emoji">🎂</div>
+        <p>a little cake, a lot of wishes ♡</p>
+      </div>
+
+      <p class="eyebrow">A special little day ♡</p>
+
+      <h1>
+        Today is all<br />
+        <span>about you.</span>
+      </h1>
+
+      <p class="intro">
+        Someone as wonderful as you deserves
+        a little extra magic today.
+      </p>
+
+      <div class="divider">
+        <span></span> ♡ <span></span>
+      </div>
+
+      <p class="hint">There's something waiting for you...</p>
+
+      <button
+        class="surprise-button"
+        id="surpriseButton"
+        type="button"
+        aria-expanded="false"
+        aria-controls="surpriseMessage"
+      >
+        <span>Open your surprise</span>
+        <span class="button-heart">♡</span>
+      </button>
+
+      <!-- First surprise: your original birthday message -->
+      <section
+        class="surprise-message"
+        id="surpriseMessage"
+        hidden
+        aria-live="polite"
+      >
+        <div class="message-icon">💌</div>
+
+        <p class="message-kicker">A little wish, just for you</p>
+        <h2>Happy Birthday! ♡</h2>
+
+        <p class="message-text">
+          May your days be filled with tiny joys,
+          beautiful surprises, genuine smiles,
+          and all the love your heart can hold.
+        </p>
+
+        <p class="message-ending">
+          You deserve a little magic. Always. ✨
+        </p>
+
+        <div class="message-flower">🌷</div>
+
+        <!-- Second surprise -->
+        <div class="secret-gift-section">
+          <p class="secret-gift-intro">
+            Wait... there's one more little thing for you ♡
+          </p>
+
+          <p class="secret-gift-caption">
+            A tiny gift, hiding a little message.
+          </p>
+
+          <button
+            class="open-this-button"
+            id="openThisButton"
+            type="button"
+            aria-expanded="false"
+            aria-controls="secretGiftReveal"
+          >
+            Open this 🎀
+          </button>
+
+          <div class="secret-gift-reveal" id="secretGiftReveal" hidden>
+            <div class="secret-gift-box" id="secretGiftBox">
+              <span class="secret-gift-bow">🎀</span>
+              <span class="secret-gift-emoji">🎁</span>
+              <span class="secret-gift-heart">♡</span>
+            </div>
+
+            <div class="secret-note">
+              <div class="secret-note-icon">💗</div>
+              <p class="secret-note-kicker">A little secret for you</p>
+              <h3>You're someone's sunshine! ☀️</h3>
+              <p>
+                Never forget how special you are.
+                May you always find reasons to smile,
+                little things to be excited about,
+                and beautiful moments to remember.
+              </p>
+              <p class="secret-note-ending">
+                Sending you the biggest birthday hug! ♡
+              </p>
+              <div class="secret-note-flowers">🌸 💕 🌷</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="card-footer">
+        <span>made with</span>
+        <span class="footer-heart">♥</span>
+        <span>and a little magic</span>
+      </footer>
+    </section>
+
+    <p class="bottom-note">
+      ✧ a tiny moment to make you smile ✧
+    </p>
+  </main>
+
+  <div class="effects-layer" id="effectsLayer" aria-hidden="true"></div>
+
+   <audio id="birthdayMusic" src="music.mp3" preload="auto"></audio>
+   
+</body>
+</html>
